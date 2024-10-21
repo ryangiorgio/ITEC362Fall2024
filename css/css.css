@@ -5,14 +5,20 @@
     box-sizing: border-box;
 }
 
+/* Logo Alignment */
+.logo {
+    text-align: left;
+}
+
 /* Body styling */
 body {
     display: flex;               /* Enable flexbox on the body */
     flex-direction: column;      /* Stack children vertically */
     min-height: 100vh;          /* Set minimum height to 100% of the viewport */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f5f7; /* Light background color */
     color: #333; /* Dark text color */
+    text-align: center;
 }
 
 /* Header styling */
@@ -27,6 +33,7 @@ nav {
     display: flex;
     justify-content: center;  /* Center the navigation items */
     align-items: center;
+    font-size: 20px;
 }
 
 nav a {
@@ -45,6 +52,12 @@ nav a:hover {
 main {
     padding: 40px;
     flex: 1; /* Allow main to grow and take available space */
+}
+
+/* Image styling */
+img {
+    border: 5px solid;
+    border-radius: 20px;
 }
 
 /* Section spacing */
@@ -91,4 +104,113 @@ footer {
     button {
         width: 100%; /* Full width button on small screens */
     }
+}
+
+/* Divs on index.html */
+.car-card {
+    margin-top: 50px; /* Pushes Cars of the Month off the top of the screen */
+    img {
+        width: 600px; /* Sets image width for images on that page */
+    }
+    p {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+}
+
+/* Brand Logos */
+.brands {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 20px; /* Space between the images */
+    width: 90%; /* Adjusts the width of the container */
+    margin: 0 auto; /* Centers the container on the page */
+}
+
+.brand-logo {
+    display: flex; /* Flex layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.brand-logo img {
+    border: 0px solid; /* No border */
+    width: 20vw; /* 20% of viewport width */
+    height: auto; /* Keep aspect ratio */
+    max-width: 250px; /* Max width 250px */
+}
+
+
+/* Car Images */
+.cars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 20px; /* Space between the images */
+    width: 90%; /* Adjusts the width of the container */
+    margin: 0 auto; /* Centers the container on the page */
+    align-items: center; /* Aligns images that don't have same height */
+}
+
+.car-specific {
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center content */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below */
+}
+
+.car-specific img {
+    width: 100%; /* Full width */
+    max-width: 300px; /* Max width 300px */
+    height: auto; /* Keep aspect ratio */
+}
+
+.car-specific h3 {
+    margin-top: 10px; /* Space above text */
+    font-size: 1rem; /* Text size */
+}
+
+.car-specific a {
+    margin-top: 10px; /* Space above link */
+    font-size: 1rem; /* Link size */
+}
+
+/* Acura Details */
+.car-details {
+    margin-top: 20vh;
+}
+
+.car-details h2 {
+    font-size: 30px;
+}
+
+.car-details img {
+    margin-bottom: 20px;
+}
+
+.car-details p {
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* Contact Page */
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.contact-form button {
+    display: block;
+    margin: 0 auto 100px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.contact-form p {
+    padding: 10px;
+    font-size: 30px;
 }
